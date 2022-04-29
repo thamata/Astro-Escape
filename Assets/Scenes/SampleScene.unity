@@ -988,5 +988,5 @@ MonoBehaviour:
   - {fileID: 566176017}
   - {fileID: 1149037751}
   enemyPrefab: {fileID: 4663720357290424937, guid: a30accaa77e5d214bbd77306ea187170, type: 3}
-  spawnCooldownAstroid: 1
-  spawnCooldownEnemy: 1
+  spawnCooldownAstroid: 2
+  spawnCooldownEnemy: 1.5

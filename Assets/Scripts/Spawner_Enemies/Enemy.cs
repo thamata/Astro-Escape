@@ -24,5 +24,9 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject, 7f);
 
     }
-
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.CompareTag("Laser")) {
+            Destroy(gameObject);
+        }
+    }
 }

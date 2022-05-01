@@ -17,7 +17,9 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        shipsAlive = 3;
+        enemySpeed = 2f;
+        astroidSpeed = 4f;
     }
 
     // Update is called once per frame

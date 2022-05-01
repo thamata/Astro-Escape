@@ -10,7 +10,8 @@ public class EnemyKillShip : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             //Destroy(ship);
-            Debug.Log("Hit");
+            //GameController.shipsAlive -= 1;
+            
         }
     }
 }

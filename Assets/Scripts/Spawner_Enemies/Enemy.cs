@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] public float speed = 20f;
+    [SerializeField] public float speed;
 
     public Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
+        speed = GameController.enemySpeed;
         float x = transform.position.x;
         if (x > 0)
         {

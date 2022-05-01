@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Astroid : MonoBehaviour
 {
-    [SerializeField] public float speed = 20f;
+    [SerializeField] public float speed;
 
     public Rigidbody2D rb;
     public GameObject gb;
@@ -12,6 +12,7 @@ public class Astroid : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        speed = GameController.astroidSpeed;
         rb.velocity = -transform.up * speed;
         gb.transform.Rotate(0, 0, 53f);
         Destroy(gameObject, 7f);

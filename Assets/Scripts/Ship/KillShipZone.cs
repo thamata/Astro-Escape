@@ -9,8 +9,8 @@ public class KillShipZone : MonoBehaviour
     {
         if(collision.gameObject.tag == "Astroid")
         {
-            //Destroy(ship);
-            //GameController.shipsAlive -= 1;
+            Destroy(ship);
+            GameController.shipsAlive -= 1;
             
         }
     }

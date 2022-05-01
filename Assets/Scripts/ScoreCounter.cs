@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class ScoreCounter : MonoBehaviour
 {
 
-    public bool isPaused;
     public Text counterText;
     public double score;
 
@@ -19,23 +18,20 @@ public class ScoreCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isPaused = PauseMenu.isPaused;
         counterText.text = score.ToString();
-        if (!isPaused)
+        if (GameController.shipsAlive == 3)
         {
-            if (GameController.shipsAlive == 3)
-            {
-                score += 1;
-            }
-            else if (GameController.shipsAlive == 2)
-            {
-                score += .8;
-            }
-            else if (GameController.shipsAlive == 1)
-            {
-                score += .6;
-            }
+            score += 1;
         }
+        else if(GameController.shipsAlive == 2)
+        {
+            score += .8;
+        }
+        else if (GameController.shipsAlive == 1)
+        {
+            score += .6;
+        }
+
 
         
     }

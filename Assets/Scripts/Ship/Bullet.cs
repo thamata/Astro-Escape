@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.CompareTag("DestroyLaser")) {
+        if (collision.CompareTag("DestroyLaser") || collision.CompareTag("Enemy")) {
             Destroy(gameObject);
         }
     }

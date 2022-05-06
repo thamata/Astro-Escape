@@ -449,6 +449,11 @@ Transform:
   m_Father: {fileID: 2013440456}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &792024008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4786361495865006617, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+  m_PrefabInstance: {fileID: 944072049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &848654717
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +495,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -3.87
       objectReference: {fileID: 0}
+    - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: shipAliveCheck1
+      value: 
+      objectReference: {fileID: 792024008}
+    - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: shipAliveCheck2
+      value: 
+      objectReference: {fileID: 1032061381}
     - target: {fileID: 3703260654422388286, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -593,6 +606,18 @@ PrefabInstance:
       propertyPath: canShoot
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: shipAliveCheck
+      value: 
+      objectReference: {fileID: 792024008}
+    - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: shipAliveCheck1
+      value: 
+      objectReference: {fileID: 792024008}
+    - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: shipAliveCheck2
+      value: 
+      objectReference: {fileID: 792024008}
     - target: {fileID: 3703260654422388286, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -640,6 +665,10 @@ PrefabInstance:
     - target: {fileID: 4585225634855924988, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: m_Name
       value: ShipPrefabTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786361495865006617, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: m_Name
+      value: Ship1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
@@ -713,6 +742,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fe4174bba604f42895fd4e6d0088f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1032061381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4786361495865006617, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+  m_PrefabInstance: {fileID: 1273345080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1099325641
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +949,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.93
       objectReference: {fileID: 0}
+    - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: shipAliveCheck
+      value: 
+      objectReference: {fileID: 792024008}
+    - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: shipAliveCheck1
+      value: 
+      objectReference: {fileID: 792024008}
+    - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: shipAliveCheck2
+      value: 
+      objectReference: {fileID: 792024008}
     - target: {fileID: 3703260654422388286, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -966,6 +1012,14 @@ PrefabInstance:
     - target: {fileID: 4786361495832093852, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: m_LocalPosition.y
       value: -2.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786361495865006617, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: m_Name
+      value: Ship2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786361495865006619, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: shipNumber
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4786361495865006694, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: m_LocalPosition.y

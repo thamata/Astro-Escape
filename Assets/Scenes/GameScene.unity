@@ -449,6 +449,11 @@ Transform:
   m_Father: {fileID: 2013440456}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &667934484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4585225634855924988, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+  m_PrefabInstance: {fileID: 944072049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &792024008 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4786361495865006617, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
@@ -495,6 +500,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -3.87
       objectReference: {fileID: 0}
+    - target: {fileID: 67847459, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: ship
+      value: 
+      objectReference: {fileID: 1644896034}
+    - target: {fileID: 1831703182, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: ship
+      value: 
+      objectReference: {fileID: 1644896034}
     - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: shipAliveCheck1
       value: 
@@ -565,6 +578,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+--- !u!1 &899520673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4585225634855924988, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+  m_PrefabInstance: {fileID: 1273345080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &925038190
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +620,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 67847459, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: ship
+      value: 
+      objectReference: {fileID: 667934484}
+    - target: {fileID: 1831703182, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: ship
+      value: 
+      objectReference: {fileID: 667934484}
     - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: canShoot
       value: 1
@@ -949,6 +975,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.93
       objectReference: {fileID: 0}
+    - target: {fileID: 67847459, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: ship
+      value: 
+      objectReference: {fileID: 899520673}
+    - target: {fileID: 1831703182, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: ship
+      value: 
+      objectReference: {fileID: 899520673}
     - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: shipAliveCheck
       value: 
@@ -1114,6 +1148,11 @@ Transform:
   m_Father: {fileID: 2013440456}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1644896034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4585225634855924988, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+  m_PrefabInstance: {fileID: 877687418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1650838498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,6 +1360,7 @@ MonoBehaviour:
   multiplierText: {fileID: 1693711536}
   score: 0
   mulitplier: 0
+  intScore: 0
 --- !u!1 &1851135778
 GameObject:
   m_ObjectHideFlags: 0

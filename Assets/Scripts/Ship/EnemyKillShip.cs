@@ -10,6 +10,7 @@ public class EnemyKillShip : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             Destroy(ship);
+            Destroy(collision.gameObject);
             GameController.shipsAlive -= 1;
             
         }

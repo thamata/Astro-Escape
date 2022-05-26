@@ -13,6 +13,8 @@ public class Weapon : MonoBehaviour
     public float coolDownTime = 2;
     private float nextFireTime = 0;
 
+    public AudioSource fireSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,8 @@ public class Weapon : MonoBehaviour
         if(Time.time > nextFireTime) {
             Instantiate(laserPrefab, firepoint.position, firepoint.rotation);
             nextFireTime = Time.time + coolDownTime;
+            fireSource.Play();
+            
         }
         canShoot = true;
     }

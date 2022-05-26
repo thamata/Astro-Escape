@@ -655,6 +655,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: fireSource
+      value: 
+      objectReference: {fileID: 1780222380}
+    - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: shipAliveCheck
       value: 
       objectReference: {fileID: 792024008}
@@ -1540,6 +1544,11 @@ Transform:
   m_Father: {fileID: 2013440456}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1780222380 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4603573740889728719, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+  m_PrefabInstance: {fileID: 944072049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1851135778
 GameObject:
   m_ObjectHideFlags: 0

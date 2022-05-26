@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BackgroundScroller : MonoBehaviour
 {
-    public float scrollSpeed = 3f;
+    public float scrollSpeed = 6f;
     public float offset;
     private Material mat;
 
@@ -15,7 +15,7 @@ public class BackgroundScroller : MonoBehaviour
 
     void Update()
     {
-        offset += (Time.deltaTime * scrollSpeed);
+        offset += (Time.deltaTime * scrollSpeed/5);
         mat.SetTextureOffset("_MainTex", new Vector2(0, offset));
     }
 }

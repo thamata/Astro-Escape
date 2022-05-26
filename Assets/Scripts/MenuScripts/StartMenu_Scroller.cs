@@ -18,7 +18,7 @@ public class StartMenu_Scroller : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.down * speed * Time.deltaTime);
-        if (transform.position.y < -400f)
+        if (transform.position.y < -800f)
         {
             transform.position = StartPosition;
         }

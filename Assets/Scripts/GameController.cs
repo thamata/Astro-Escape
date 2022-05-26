@@ -25,8 +25,8 @@ public class GameController : MonoBehaviour
         score = counter.score;
         if (increaseScore < score)
         {
-            astroidSpeed += .5f;
-            enemySpeed += .25f;
+            astroidSpeed += .3f;
+            enemySpeed += .15f;
             increaseScore += 500;
         }
     }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -28,6 +29,13 @@ public class GameController : MonoBehaviour
             astroidSpeed += .3f;
             enemySpeed += .15f;
             increaseScore += 500;
+        }
+        if(shipsAlive == 0)
+        {
+            SceneManager.LoadScene(2);
+            shipsAlive = 3;
+            astroidSpeed = 4f;
+            enemySpeed = 2f;
         }
     }
 }

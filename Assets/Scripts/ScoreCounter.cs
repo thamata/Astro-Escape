@@ -44,7 +44,7 @@ public class ScoreCounter : MonoBehaviour
                 multiplierImage.sprite = multiplierImages[2];
 
             }
-            score += multiplier;
+            score += multiplier * (int)Time.timeScale;
             Debug.Log(multiplier);
         }
         

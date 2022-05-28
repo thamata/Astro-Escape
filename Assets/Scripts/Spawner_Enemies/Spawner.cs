@@ -5,10 +5,10 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public Transform[] astroidSpawnPoints;
-    public GameObject astroidPrefab;
+    public GameObject[] astroidPrefab;
 
     public Transform[] enemySpawnPoints;
-    public GameObject enemyPrefab;
+    public GameObject[] enemyPrefab;
 
     private bool canSpawnAstroid = true;
 
@@ -40,7 +40,7 @@ public class Spawner : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         int randSpawnPoint = Random.Range(0, astroidSpawnPoints.Length);
 
-        Instantiate(astroidPrefab, astroidSpawnPoints[randSpawnPoint].position, transform.rotation);
+        Instantiate(astroidPrefab[Random.Range(0, 2)], astroidSpawnPoints[randSpawnPoint].position, transform.rotation);
 
         canSpawnAstroid = true;
     }
@@ -50,7 +50,7 @@ public class Spawner : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         int randSpawnPoint = Random.Range(0, enemySpawnPoints.Length);
 
-        Instantiate(enemyPrefab, enemySpawnPoints[randSpawnPoint].position, transform.rotation);
+        Instantiate(enemyPrefab[Random.Range(0,2)], enemySpawnPoints[randSpawnPoint].position, transform.rotation);
 
         canSpawnEnemy = true;
     }

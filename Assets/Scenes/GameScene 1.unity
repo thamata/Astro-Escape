@@ -1860,6 +1860,10 @@ PrefabInstance:
       value: Score
       objectReference: {fileID: 0}
     - target: {fileID: 8871113749301307563, guid: 9c70bdea372b8a54989c0054d54b24de, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: baa70dbd528612c4ea83f17f21b7b40c, type: 3}
+    - target: {fileID: 8871113749301307563, guid: 9c70bdea372b8a54989c0054d54b24de, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 300
       objectReference: {fileID: 0}

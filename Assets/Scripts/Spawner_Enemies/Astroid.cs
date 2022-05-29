@@ -19,9 +19,10 @@ public class Astroid : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    IEnumerator KillEnemy(float waitTime)
     {
-
+        yield return new WaitForSeconds(waitTime);
+        Destroy(gameObject);
     }
 }

@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] public float speed;
 
     public Rigidbody2D rb;
+    public AudioSource shipDeath;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,14 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Laser")) {
-            Destroy(gameObject);
+            shipDeath.Play();
+            StartCoroutine("KillEnemy", 0.15f);
         }
+    }
+
+    IEnumerator KillEnemy(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        Destroy(gameObject);
     }
 }

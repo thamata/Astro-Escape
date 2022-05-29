@@ -6,9 +6,12 @@ using UnityEngine.UI;
 public class ScoreCounter : MonoBehaviour
 {
 
-    public bool isPaused;
     public Text counterText;
+    public Sprite[] multiplierImages;
+    public Image multiplierImage;
     public double score;
+    public double multiplier;
+    public int intScore;
 
     // Start is called before the first frame update
     void Start()
@@ -19,23 +22,31 @@ public class ScoreCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isPaused = PauseMenu.isPaused;
-        counterText.text = score.ToString();
-        if (!isPaused)
-        {
+        intScore = Mathf.RoundToInt((float)score);
+        counterText.text = intScore.ToString();
+        if (GameController.shipsAlive != 0) { 
             if (GameController.shipsAlive == 3)
             {
-                score += 1;
+                multiplier = 1;
+                multiplierImage.sprite = multiplierImages[0];
+            
             }
-            else if (GameController.shipsAlive == 2)
+            else if(GameController.shipsAlive == 2)
             {
-                score += .8;
+                multiplier = .8;
+                multiplierImage.sprite = multiplierImages[1];
+
             }
             else if (GameController.shipsAlive == 1)
             {
-                score += .6;
+                multiplier = .6;
+                multiplierImage.sprite = multiplierImages[2];
+
             }
+            score += multiplier * (int)Time.timeScale;
+            Debug.Log(multiplier);
         }
+        
 
         
     }

@@ -2782,16 +2782,12 @@ MonoBehaviour:
   - {fileID: 1650838499}
   - {fileID: 90336622}
   - {fileID: 655624949}
-  astroidPrefab:
-  - {fileID: 5678944092422426219, guid: 89c8fc2b9fb4cf045b6b9141315da1af, type: 3}
-  - {fileID: 7281658809075090965, guid: 5b5edeedc438bf646bc55bf1eda0c25f, type: 3}
+  astroidPrefab: {fileID: 5678944092422426219, guid: 89c8fc2b9fb4cf045b6b9141315da1af, type: 3}
   enemySpawnPoints:
   - {fileID: 1444039831}
   - {fileID: 1099325642}
   - {fileID: 566176017}
   - {fileID: 1149037751}
-  enemyPrefab:
-  - {fileID: 4663720357290424937, guid: a30accaa77e5d214bbd77306ea187170, type: 3}
-  - {fileID: 6362193070444450026, guid: 7e775f273578fef4fb529672cb96557e, type: 3}
+  enemyPrefab: {fileID: 4663720357290424937, guid: a30accaa77e5d214bbd77306ea187170, type: 3}
   spawnCooldownAstroid: 2
   spawnCooldownEnemy: 1.5

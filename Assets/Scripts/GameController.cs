@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
 
     private double increaseScore = 500;
     private double score;
+    private int finalScore;
 
     public ScoreCounter counter;
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class GameController : MonoBehaviour
     void Update()
     {
         score = counter.score;
+        finalScore = Mathf.RoundToInt((float)score);
         if (increaseScore < score)
         {
             astroidSpeed += .3f;
@@ -32,6 +34,10 @@ public class GameController : MonoBehaviour
         }
         if(shipsAlive == 0)
         {
+            if(finalScore > PlayerPrefs.GetInt("HighScore",0)){
+                PlayerPrefs.SetInt("HighScore", finalScore);
+            }
+            
             SceneManager.LoadScene(2);
             shipsAlive = 3;
             astroidSpeed = 4f;

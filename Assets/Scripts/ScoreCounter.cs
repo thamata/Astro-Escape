@@ -24,7 +24,6 @@ public class ScoreCounter : MonoBehaviour
     {
         intScore = Mathf.RoundToInt((float)score);
         counterText.text = intScore.ToString();
-        //multiplierText.text = mulitplier.ToString();
         if (GameController.shipsAlive != 0) { 
             if (GameController.shipsAlive == 3)
             {

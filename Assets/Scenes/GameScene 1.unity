@@ -908,6 +908,10 @@ PrefabInstance:
       propertyPath: shipDeath
       value: 
       objectReference: {fileID: 877687420}
+    - target: {fileID: 351871159548730740, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: shipAliveCheck1
       value: 
@@ -1343,6 +1347,10 @@ PrefabInstance:
       propertyPath: shipDeath
       value: 
       objectReference: {fileID: 944072051}
+    - target: {fileID: 351871159548730740, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: canShoot
       value: 1
@@ -2066,6 +2074,10 @@ PrefabInstance:
       propertyPath: shipDeath
       value: 
       objectReference: {fileID: 1273345082}
+    - target: {fileID: 351871159548730740, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1770014336503545094, guid: 3f69136ef7ec676429ee17cf7ed60468, type: 3}
       propertyPath: shipAliveCheck
       value: 
